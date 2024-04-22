@@ -11,6 +11,15 @@ const config: Config = {
       fontFamily: {
         gotham: ["Gotham-Book"],
         gothamBold: ["Gotham-Bold"],
+      },
+      colors: {
+        "white": "#FFFFFF",
+        "black": "#000000",
+        "light-grey": "#00000029",
+        "grey": "#929292",
+        "light-blue": "#F2F6FA",
+        "blue": "#004CFF",
+        "red": "#FF1B1B",
       }
     },
   },
