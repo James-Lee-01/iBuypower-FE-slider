@@ -1,5 +1,7 @@
 import type { Config } from "tailwindcss";
 
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -7,7 +9,16 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      "xs":"480px",
+      ...defaultTheme.screens,
+    },
     extend: {
+      screens: {
+        "xs":"480px",
+        'md': {'min': '768px', 'max': '1023px'},
+        "3xl": "1920px",
+      },
       fontFamily: {
         gotham: ["Gotham-Book"],
         gothamBold: ["Gotham-Bold"],
