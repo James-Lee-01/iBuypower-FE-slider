@@ -3,13 +3,13 @@ import Affirm from "../../public/images/icon-affirm.svg"
 
 export default function Card() {
   return (
-    <div className="card w-auto flex flex-col justify-between bg-white rounded-[15px] shadow-[0_0_20px_#00000029]">
+    <div className="card w-auto flex flex-col justify-between bg-white rounded-[15px] shadow-[0_0_20px_#00000029] lg:min-w-[295px] lg:max-w-[315px] 2xl:w-min-[315px] 2xl:max-w-none">
             <div className="card-info px-5 xs:px-6 py-4 xs:py-5">
               <div className="tag-container px-[10px] py-[5px] w-fit border rounded-full border-grey">
                 <p className="font-gothamBold text-grey text-[8px] md:text-[9px] lg:text-[11px]">Prebuilt PC</p>
               </div>
               <div className="card-image flex justify-center items-center">
-                <Image src="/images/gaming-pc-01-Y40P001-main-kbm-2400.webp" alt="RDY Y40P 003 image" className="w-44 md:w-52 aspect-square" width={230} height={230} priority/>
+                <Image src="/images/gaming-pc-01-Y40P001-main-kbm-2400.webp" alt="RDY Y40P 003 image" className="w-44 md:w-52 lg:w-52 aspect-square" width={230} height={230} priority/>
               </div>
               <div className="card-pc-text">
                 <h4 className="card-pc-title font-gothamBold mt-4 text-base xs:text-[20px] md:text-lg">RDY Y40P 003</h4>
