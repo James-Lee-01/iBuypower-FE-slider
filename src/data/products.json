@@ -1,0 +1,140 @@
+[
+  {
+    "id": 1,
+    "name": "RDY Y40P 003",
+    "image": "/images/gaming-pc-01-Y40P001-main-kbm-2400.webp",
+    "tag": "Prebuilt PC",
+    "description": [
+      "Windows 11 Home",
+      "Intel® Core™ i7-14700KF CPU",
+      "GeForce RTX 4070 Ti SUPER - 16GB",
+      "2TB M.2 NVMe SSD",
+      "32GB DDR5-6000MHz RGB RAM"
+    ],
+    "price": 1849,
+    "originalPrice": 2499,
+    "saveAmount": 650,
+    "installment": {
+      "monthly": 172.07
+    },
+    "shipping": {
+      "fee": "Free Shipping",
+      "deliveryDate": "Delivery By Thursday, Apr 25"
+    }
+  },
+  {
+    "id": 2,
+    "name": "RDY Trace 7MP 001",
+    "image": "/images/gaming-pc-01-Trace7MP001-main-KBM-2400-solo.webp",
+    "tag": "Prebuilt PC",
+    "description": [
+      "Windows 11 Home", 
+      "AMD Ryzen 7 7700X CPU", 
+      "GeForce RTX 4070 - 12GB", 
+      "1TB M.2 NVMe SSD", 
+      "32GB DDR5-5600MHz RGB RAM"
+    ],
+    "price": 1599,
+    "originalPrice": 1849,
+    "saveAmount": 250,
+    "installment": {
+      "monthly": 100
+    },
+    "shipping": {
+      "fee": "Free Shipping",
+      "deliveryDate": "Delivery By Tuesday, Apr 30"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Intel Core 14th Gen Ultimate Gaming Daily Deal",
+    "image": "/images/gaming-pc-01-H7-Flow-white-main-400.avif",
+    "tag": "Custom PC",
+    "description": [
+      "Windows 11 Home", 
+      "Intel® Core™ i9-14900KF CPU", 
+      "GeForce RTX 4080 - 16GB", 
+      "2TB WD M.2 NVMe SSD", 
+      "32GB DDR5-6000MHz RAM"
+    ],
+    "price": 2699,
+    "originalPrice": 3149,
+    "saveAmount": 450,
+    "installment": {
+      "monthly": 131
+    },
+    "shipping": {
+      "fee": "Free Shipping",
+      "deliveryDate": "Estimate Ship By 05/02/2024"
+    }
+  },
+  {
+    "id": 4,
+    "name": "AMD Gaming PC Configurator 2 Daily Deal",
+    "image": "/images/gaming-pc-01-Slate6Mesh-main-400.avif",
+    "tag": "Custom PC",
+    "description": [
+      "Windows 11 Home", 
+      "AMD Ryzen™ 5 7600 CPU", 
+      "GeForce RTX 4060 Ti - 8GB", 
+      "1TB WD M.2 NVMe SSD", 
+      "16GB DDR5-5200MHz RAM"
+    ],
+    "price": 1309,
+    "originalPrice": 1509,
+    "saveAmount": 200,
+    "installment": {
+      "monthly": 82
+    },
+    "shipping": {
+      "fee": "Free Shipping",
+      "deliveryDate": "Estimate Ship By 05/02/2024"
+    }
+  },
+  {
+    "id": 5,
+    "name": "RDY Lancool 005",
+    "image": "/images/gaming-pc-01-Lancool005-nvidia-main-400.avif",
+    "tag": "Prebuilt PC",
+    "description": [
+      "Windows 11 Home", 
+      "Intel® Core™ i9-14900KF CPU", 
+      "GeForce RTX 4080 SUPER - 16GB", 
+      "2TB M.2 NVMe Gen4 SSD", 
+      "32GB DDR5-6000MHz RGB RAM"
+    ],
+    "price": 2599,
+    "originalPrice": 2899,
+    "saveAmount": 300,
+    "installment": {
+      "monthly": 126
+    },
+    "shipping": {
+      "fee": "Free Shipping",
+      "deliveryDate": "Delivery By Tuesday, Apr 30"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Intel 14th Gen Pro Gaming PC Daily Deal",
+    "image": "/images/gaming-pc-01-Trace7Mesh-main-KBM-400-solo.avif",
+    "tag": "Custom PC",
+    "description": [
+      "Windows 11 Home", 
+      "Intel® Core™ i5-14600KF CPU", 
+      "GeForce RTX 4060 Ti - 8GB", 
+      "2TB WD M.2 NVMe SSD", 
+      "32GB DDR5-6000MHz RAM"
+    ],
+    "price": 1589,
+    "originalPrice": 1839,
+    "saveAmount": 250,
+    "installment": {
+      "monthly": 99
+    },
+    "shipping": {
+      "fee": "Free Shipping",
+      "deliveryDate": "Estimate Ship By 05/02/2024"
+    }
+  }
+]
