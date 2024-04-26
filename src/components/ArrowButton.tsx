@@ -2,10 +2,9 @@ import Arrow from "../../public/images/arrow.svg"
 
 interface ArrowButtonProps {
   direction: 'left' | 'right';
-
 }
 
-const ArrowButton: React.FC<ArrowButtonProps> = ({ direction }) => {
+const ArrowButton = ({ direction }: ArrowButtonProps) => {
   const isLeftDirection = direction === 'left';
   const arrowRotation = isLeftDirection ? '-rotate-90' : 'rotate-90';
   const arrowClassName = isLeftDirection ? 'left-arrow' : 'right-arrow';
