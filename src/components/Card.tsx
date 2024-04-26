@@ -9,7 +9,6 @@ export interface Product {
   description: string[];
   price: number;
   originalPrice: number;
-  saveAmount: number;
   installment: {
     monthly: number;
   };
@@ -25,6 +24,10 @@ interface CardProps {
 
 export default function Card({ product }: CardProps) {
   const buttonText = product.tag === "Custom PC" ? "Customize" : "Buy Now";
+  const saveAmount = product.originalPrice - product.price;
+  const formattedPrice = product.price.toLocaleString();
+  const formattedOriginalPrice = product.originalPrice.toLocaleString();
+
 
   return (
     <div className="card w-auto flex flex-col justify-between bg-white rounded-[15px] shadow-[0_0_20px_#00000029] h-[640px] xs:h-[680px] md:h-[700px] lg:h-[730px] lg:min-w-[295px] lg:max-w-[315px] 2xl:w-min-[315px] 2xl:max-w-none">
@@ -50,11 +53,11 @@ export default function Card({ product }: CardProps) {
         <div className="flex flex-col">
           <div className="tag-container px-[8px] xs:px-[10px] py-[6px] xs:py-[5px] border-0 rounded-full bg-red flex w-fit  text-white gap-1 text-[10px] xs:text-[12px]">
               <span>SAVE</span>
-              <span>${product.saveAmount}</span>
+              <span>${saveAmount}</span>
           </div>
           <div className="card-price-text flex gap-2 mt-1 items-end">
-            <p className="font-gothamBold text-[20px] xs:text-[30px]">${product.price}</p>
-            <p className="relative  text-light-grey line-through bottom-1 text-[12px] xs:text-[16px]">${product.originalPrice}</p>
+            <p className="font-gothamBold text-[20px] xs:text-[30px]">${formattedPrice}</p>
+            <p className="relative  text-light-grey line-through bottom-1 text-[12px] xs:text-[16px]">${formattedOriginalPrice}</p>
           </div>
           <p className="price-installment relative flex flex-wrap items-center text-[12px] xs:text-[14px]">
             Starting at&nbsp;
