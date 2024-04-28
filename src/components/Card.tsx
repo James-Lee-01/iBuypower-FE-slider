@@ -41,8 +41,8 @@ export default function Card({ product }: CardProps) {
         <div className="card-pc-text grow">
           <h4 className="card-pc-title font-gothamBold h-[30%] mt-4 text-base md:text-lg lg:text-[20px]">{product.name}</h4>
           <ul className="card-pc-description-list mt-3 flex flex-col gap-1 text-xs md:text-sm lg:text-sm 2xl:text-base">
-            {product.description.map((description, index) => (
-              <li className="card-pc-description" key={index}>{description}</li>
+            {product.description.map((description) => (
+              <li className="card-pc-description" key={`${product.id}-${description}`}>{description}</li>
             ))}
           </ul>
         </div>
