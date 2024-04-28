@@ -19,7 +19,7 @@ export interface Product {
 }
 
 interface CardProps {
-  product: Product;
+  readonly product: Readonly<Product>;
 }
 
 export default function Card({ product }: CardProps) {
@@ -41,8 +41,8 @@ export default function Card({ product }: CardProps) {
         <div className="card-pc-text grow">
           <h4 className="card-pc-title font-gothamBold h-[30%] mt-4 text-base md:text-lg lg:text-[20px]">{product.name}</h4>
           <ul className="card-pc-description-list mt-3 flex flex-col gap-1 text-xs md:text-sm lg:text-sm 2xl:text-base">
-            {product.description.map((description, index) => (
-              <li className="card-pc-description" key={index}>{description}</li>
+            {product.description.map((description) => (
+              <li className="card-pc-description" key={`${product.id}-${description}`}>{description}</li>
             ))}
           </ul>
         </div>
@@ -59,14 +59,14 @@ export default function Card({ product }: CardProps) {
             <p className="font-gothamBold text-[20px] xs:text-[30px]">${formattedPrice}</p>
             <p className="relative  text-light-grey line-through bottom-1 text-[12px] xs:text-[16px]">${formattedOriginalPrice}</p>
           </div>
-          <p className="price-installment relative flex flex-wrap items-center text-[12px] xs:text-[14px]">
-            Starting at&nbsp;
+          <div className="price-installment relative flex flex-wrap items-center text-[12px] xs:text-[14px]">
+            <span>Starting at&nbsp;</span>
             <span className="text-blue">${product.installment.monthly}/mo&nbsp;</span>
-            <span> with&nbsp;</span>
+            <span>with</span>
             <span className="relative flex items-center">
               <Affirm className="h-8 xs:h-9 w-auto -my-3 -translate-y-0.5 xs:-translate-y-1" />
             </span>
-          </p>
+          </div>
 
           <div className="shipping-and-buy flex justify-between items-end mt-4 md:gap-3 lg:gap-4">
             <div className="price-shipping flex flex-col mr-1 xs:mr-4">
