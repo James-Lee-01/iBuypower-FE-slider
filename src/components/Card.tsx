@@ -19,7 +19,7 @@ export interface Product {
 }
 
 interface CardProps {
-  product: Product;
+  readonly product: Readonly<Product>;
 }
 
 export default function Card({ product }: CardProps) {
