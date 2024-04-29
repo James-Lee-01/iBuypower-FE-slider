@@ -5,7 +5,7 @@
 
 <img src="public/demo/main-page.png" alt="Home Page" width="80%">
 
-這是一個根據設計稿規劃，，透過 [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) 建置的 [Next.js](https://nextjs.org/) 專案。採用 React 及 Typescript 撰寫，UI 使用 Tailwind CSS 及 Swiper 套件製作的 Carousel Slider (輪播幻燈片元件)。
+這是一個根據設計稿規劃，透過 [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) 建置的 [Next.js](https://nextjs.org/) 專案。採用 React 及 Typescript 撰寫，UI 使用 Tailwind CSS 及 Swiper 套件製作的 Carousel Slider (輪播幻燈片元件)。
 
 <img src="public/demo/mobile-mockup.png" alt="Mobile Page" width="30%"> 
 (行動裝置畫面)
